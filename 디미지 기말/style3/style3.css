@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "neodgm";
+  src: url("/font/neodgm.woff") format("woff");
+  font-size: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-family: "neodgm", sans-serif;
+}
+
+/* 운세 페이지 전체 레이아웃 */
+body {
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column; /* 세로 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  justify-content: center; /* 세로 중앙 정렬 */
+  height: 100vh; /* 뷰포트 전체 높이 사용 */
+  margin: 0;
+  background: #FFFDF2; /* 배경색 */
+  font-family: "neodgm", sans-serif; /* 폰트 */
+  color: #000; /* 텍스트 색상 */
+}
+
+/* 운세 메시지 */
+.fortune-message {
+  font-size: 1.5rem; /* 폰트 크기 */
+  text-align: center;
+  margin-bottom: 40px; /* 버튼과의 간격 */
+  color: #5E3A64; /* 텍스트 색상 */
+}
+
+/* Back to Home 버튼 */
+.back-home-btn {
+  display: inline-block;
+  padding: 10px 20px; /* 버튼 내부 여백 */
+  font-size: 1.2rem; /* 텍스트 크기 */
+  font-family: "neodgm", sans-serif;
+  text-align: center;
+  color: #5E3A64; /* 텍스트 색상 */
+  background-color: #FFC9F3; /* 버튼 배경색 */
+  border: 2px solid #000; /* 테두리 */
+  border-radius: 10px; /* 둥근 모서리 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  cursor: pointer; /* 마우스 커서 */
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.back-home-btn:hover {
+  background-color: #FFD4DE; /* 호버 시 배경색 변경 */
+  transform: scale(1.05); /* 호버 시 크기 확대 */
+}/*# sourceMappingURL=style3.css.map */

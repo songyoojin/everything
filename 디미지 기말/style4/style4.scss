@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'neodgm';
+    src: url("/font/neodgm.woff") format("woff");
+    font-size: 400;
+    font-style: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+
+html{
+    font-family: 'neodgm', sans-serif;
+}
+
+/* 페이지 레이아웃 */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 화면 전체 높이 사용 */
+    margin: 0;
+    background: #FFFDF2; /* 배경색 */
+    font-family: 'neodgm', sans-serif; /* 폰트 */
+    color: #5E3A64; /* 텍스트 색상 */
+}
+
+/* Back to Home 버튼 스타일 */
+.back-home-btn {
+    display: inline-block;
+    margin-top: 20px; /* 버튼 위치 조정 */
+    padding: 10px 20px; /* 버튼 내부 여백 */
+    font-size: 1.2rem; /* 버튼 텍스트 크기 */
+    font-family: 'neodgm', sans-serif; /* 버튼 폰트 */
+    text-align: center;
+    color: #5E3A64; /* 텍스트 색상 */
+    background-color: #E6DCFF; /* 버튼 배경색 */
+    border: 2px solid #000; /* 테두리 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    cursor: pointer; /* 마우스 커서 */
+    transition: transform 0.2s, background-color 0.2s; /* 애니메이션 효과 */
+}
+
+/* Back to Home 버튼 호버 효과 */
+.back-home-btn:hover {
+    background-color: #FFD4DE; /* 호버 시 배경색 변경 */
+    transform: scale(1.05); /* 호버 시 크기 확대 */
+}
+
+
+
+
+/* Music 페이지 스타일 */
+.music-info {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'neodgm', sans-serif;
+}
+
+.music-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.music-artist {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.music-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #5E3A64;
+    background-color: #BBA3FF;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.music-link:hover {
+    background-color: #FFD4DE;
+    transform: scale(1.05);
+}
